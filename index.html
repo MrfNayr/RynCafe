@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RynCafe</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                RynCafe
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+            <a href="#menu" class="btn-nav">
+                Pesan Sekarang
+            </a>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <span class="welcome">
+                SELAMAT DATANG DI RynCafe
+            </span>
+
+            <div class="line"></div>
+
+            <h1>
+                Nikmati Kopi <br>
+                Favoritmu <br>
+                Dengan Mudah
+            </h1>
+
+            <p>
+                Pesan makanan dan minuman cafe secara online
+                dengan tampilan modern dan cepat.
+            </p>
+
+            <a href="#menu" class="btn-hero">
+                Pesan Sekarang
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="Cafe">
+        </div>
+
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+
+        <div class="section-title">
+            <h2>Menu Favorit</h2>
+            <p>Pilih menu favoritmu dan klik untuk memesan.</p>
+        </div>
+
+        <div class="menu-container">
+
+            <!-- Cappuccino -->
+            <div class="menu-card" onclick="pesanMenu('Cappuccino', 25000)">
+
+                <img src="Cappuccino.jpg" alt="Cappuccino">
+
+                <div class="menu-content">
+                    <h3>Cappuccino</h3>
+                    <p>Rp 25.000</p>
+
+                    <button>Pesan Sekarang</button>
+                </div>
+
+            </div>
+
+            <!-- Kopsu -->
+            <div class="menu-card" onclick="pesanMenu('Kopi Susu', 28000)">
+
+                <img src="kopsu.jpg" alt="Kopsu">
+
+                <div class="menu-content">
+                    <h3>Kopi Susu</h3>
+                    <p>Rp 28.000</p>
+
+                    <button>Pesan Sekarang</button>
+                </div>
+
+            </div>
+
+            <!-- Coffee -->
+            <div class="menu-card" onclick="pesanMenu('Americano', 20000)">
+
+                <img src="Coffee.jpg" alt="Coffee">
+
+                <div class="menu-content">
+                    <h3>Americano</h3>
+                    <p>Rp 20.000</p>
+
+                    <button>Pesan Sekarang</button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h3>RynCafe</h3>
+
+        <p>
+            © 2026 RynCafe - Website Cafe Modern
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
